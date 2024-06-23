@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-import './Loader.sass';
+import './Loader.scss';
 
-const Loader = () => (
+const Loader: FC = () => (
     <div className="loader-conteiner">
         <div className="dank-ass-loader">
             <div className="row">

@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { classNames } from 'shared/lib';
 
-import cls from './PageLoader.module.sass';
+import cls from './PageLoader.module.scss';
 
 import Loader from '../Loader/Loader';
 

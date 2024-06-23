@@ -1,6 +1,6 @@
-.loader-conteiner {
-   
-}
+$color: #fd7000;
+$size: 12px;
+$time: 1;
 
 .dank-ass-loader {
    display: flex;
@@ -15,12 +15,12 @@
 .arrow {
    width: 0; 
    height: 0;
-   margin: 0 (-12px / 2);
-   border-left: 12px solid transparent;
-   border-right: 12px solid transparent;
-   border-bottom: (12px * 1.8) solid #fd7000;
-   animation: blink 1 + s infinite;
-   filter: drop-shadow(0 0 (12px * 1.5) #fd7000);
+   margin: 0 calc(-1 * $size / 2);
+   border-left: $size solid transparent;
+   border-right: $size solid transparent;
+   border-bottom: ($size * 1.8) solid $color;
+   animation: blink $time + s infinite;
+   filter: drop-shadow(0 0 ($size * 1.5) $color);
     
    &.down {
       transform: rotate(180deg);
@@ -28,13 +28,13 @@
    
    @for $i from 1 through 18 {
       &.outer-#{$i} {
-         animation-delay: -(1 / 18) * $i + s;
+         animation-delay: calc($time / 18) * $i + s;
       }  
    }
 
    @for $i from 1 through 6 {
       &.inner-#{$i} {
-         animation-delay: -(1 / 6) * $i + s;
+         animation-delay: calc($time / 6) * $i + s;
       }  
    }  
 }
