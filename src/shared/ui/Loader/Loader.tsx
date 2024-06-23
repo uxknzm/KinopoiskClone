@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import './Loader.scss';
 
 const Loader: FC = () => (
-    <div className="loader-conteiner">
+    <div className="loader-container">
         <div className="dank-ass-loader">
             <div className="row">
                 <div className="arrow up outer outer-18" />

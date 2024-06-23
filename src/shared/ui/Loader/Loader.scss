@@ -2,6 +2,12 @@ $color: #fd7000;
 $size: 12px;
 $time: 1;
 
+.loader-container {
+   background-color: #000;
+   padding: 70px;
+   border-radius: 8px;
+}
+
 .dank-ass-loader {
    display: flex;
    flex-direction: column;
